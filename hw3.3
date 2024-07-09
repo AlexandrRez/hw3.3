@@ -1,0 +1,15 @@
+def print_params(a = 1, b = 'строка', c = True):
+    print(a, b, c)
+    print()
+print_params()
+print_params(b = 25)
+print_params(c = [1, 2, 3])
+
+values_list_ = ['Python', 256, False]
+values_list_1 = ['Питон', 256]
+values_dict_ = {'c':65}
+print_params(*values_list_)
+print_params(*values_list_1, 65)
+print_params(**values_dict_)
+values_list_2 = [54.32, 'Строка']
+print_params(*values_list_2, 42)
